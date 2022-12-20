@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coco'Dev</title>
+    <meta charset="UTF-8">
+    <meta name="Author" content="HarleyCo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desarrollo de paginas web para emprendedores">
+    <meta name="robots" content="index, follow">  
+    <meta name="keyworks" content="Desarrollo, emprendedores, Web, paginas, diseño">
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <!--Redes compartir-->
+    <!--<meta property="og:image" content="">-->
+    <meta property="og:description" content="Desarrollo de paginas web para emprendedores">
+    <meta property="og:title" content="Coco'Dev">
+    <!--Fonts y iconos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/16a14ee763.js" crossorigin="anonymous"></script>
+    <!--Css/Js-->
+    <link rel="stylesheet" href="Styles/styles.css">
+    <!-- <script src="index.js"></script> -->
+</head>
+<body>
+    <div class="home" id="home">
+        <aside class="logo">
+            <div class="logo__centerLogo">
+                <img src="img/Logo Completo Negro.png" alt="Coco logo">
+            </div>       
+        </aside>
+        <header class="lobby">
+            <div class="back__menu" id="back__menu"></div>
+            <i class="fa-solid fa-bars" id="barsMenu"></i>
+            <nav class="nav" id="nav">
+                <ul class="nav__ul">
+                    <li><a class="nav__a" href="#home" >Home</a></li>
+                    <li><a class="nav__a" href="#skills" >Skills</a></li>
+                    <li><a class="nav__a" href="#projects" >Projects</a></li>
+                    <li><a class="nav__a" href="#contact" >Contact</a></li>          
+                </ul>
+            </nav>
+            <div class="lobby__div">
+                <h2 class="lobby__welcome">
+                    Welcome to my Portafolio.  
+                </h2>
+                <p class="lobby__p">
+                    My name is Harley COntreras COntreras, <br> i'm a web developer with a focus on Frontend.
+                </p>
+            </div>
+            <section class="lobby__contact">
+                <p class="lobby__p lobby__p_padding">Gerson_harley@hotmail.com <br> +57 322 971 2878</p>
+                <div class="lobby__icons">
+                    <a href="https://www.instagram.com/harley_contreras/" target="_blank">
+                        <i class="fa-brands fa-instagram lobby__redes lobby__redes_instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/harley-contreras-605875220" target="_blank">
+                        <i class="fa-brands fa-facebook lobby__redes lobby__redes_facebook"></i></a>
+                    <a href="https://github.com/HarleyC0" target="_blank">
+                        <i class="fa-brands fa-tiktok lobby__redes lobby__redes_tiktok"></i></a>
+                </div>
+            </section>
+        </header>
+    </div>
+<!---->   
+    <section id="skills" class="pokedex">
+        <div class="pokedex__div">
+            <h3>Languages</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+        <div class="pokedex__div">
+            <h3>Tols</h3>
+            <ul>
+                <li>SASS</li>
+                <li>GIT/GITHUB</li>
+                <li>REACT</li>
+                <li>PRETTIER/ESLINT</li>
+            </ul>
+        </div>
+    </section>
+<!---->   
+    <section class="theme" id="projects">
+        <h2 class="theme__h2">PROJECTS</h2>
+        <div class="theme__containerCards">
+            <article class="theme__cards">
+                <button class="theme__button" id="theme__button_red"><span class="theme__buttonstyle">PokéAPI</span></button>
+                <div class="theme__card">
+                    <div class="theme__cardFront" id="theme__card_redFront">
+                    </div>
+                    <div class="theme__cardBack" id="theme__card_redBack">
+                        <h2>API consumption</h2>
+                        <img src="" alt="Torchic" id="theme__card_redImg">
+                        <p>Consumption of API "PokéAPI"</p>
+                        <hr>
+                        <p>This section consumes the API to fech the displayed images of Pokémon</p>
+                    </div>
+                </div>
+            </article>
+            <article class="theme__cards">
+                <button class="theme__button" id="theme__button_blue"><span class="theme__buttonstyle">Mudkip</span></button>
+                <div class="theme__card">
+                    <div class="theme__cardFront" id="theme__card_blueFront">
+                    </div>
+                    <div class="theme__cardBack" id="theme__card_blueBack">
+                        <h2>Mudkip</h2>
+                        <img src="" alt="Torchic" id="theme__card_blueImg">
+                        <p>Lv</p>
+                        <hr>
+                        <p>#258</p>
+                        <p>Pokémon Agua</p>
+                    </div>
+                </div>
+            </article>
+            <article class="theme__cards">
+                <button class="theme__button" id="theme__button_green"><span class="theme__buttonstyle">Treecko</span></button>
+                <div class="theme__card">
+                    <div class="theme__cardFront" id="theme__card_greenFront">
+                    </div>
+                    <div class="theme__cardBack" id="theme__card_greenBack">
+                        <h2>Treecko</h2>
+                        <img src="" alt="Torchic" id="theme__card_greenImg">
+                        <p>Lv </p>
+                        <hr>
+                        <p>#252</p>
+                        <p>Pokémon Hierba</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+<!---->   
+    <footer id="contact" class="contacto">
+        <article class="contacto__datos">
+            <h3>CONTACT</h3>
+            <p>gerson_harley@hotnmail.com</p>
+            <p>+57 322 9712878</p>
+        </article>
+        <div class="contacto__icons lobby__icons">
+            <a href="https://www.instagram.com/harley_contreras/" target="_blank">
+                <i class="fa-brands fa-instagram lobby__redes lobby__redes_instagram"></i></a>
+            <a href="https://www.linkedin.com/in/harley-contreras-605875220" target="_blank">
+                <i class="fa-brands fa-facebook lobby__redes lobby__redes_facebook"></i></a>
+            <a href="https://github.com/HarleyC0" target="_blank">
+                <i class="fa-brands fa-tiktok lobby__redes lobby__redes_tiktok"></i></a>
+        </div>
+    </footer>
+    <script src="Scripts/api.js"></script>
+    <script src="Scripts/button.js"></script>
+    <script src="Scripts/index.js"></script>
+</body>
+</html>
+
+
+<!--
+Tareas:
+    * hacer nav vertical con ingenes de coco
+    * usar import para unir codigos JS
+    * poner los 3 temas para la secciones dependiendo del pokemos elegido 
+    * usar sass para poner todo el codigo de stylos
+    
+ideas
+* al escoger el pokemon cambia el color de la seccion se ambienta al pokemon, las siguientes secciones tambien cambien 
+* la 3 sección mostrara mi portafolio
+* la 4 seccíon mostrará mis datos de contacto 
+* tener una sección de ''que pokemon eres'' pokemon al azar
+
+
+estudiar:
+diferencia entre % y vw
+
+-->

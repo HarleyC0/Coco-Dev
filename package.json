@@ -1,0 +1,21 @@
+{
+  "name": "Codigos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prueba": "npx eslint Scripts/."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "2.8.1",
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
