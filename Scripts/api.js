@@ -23,15 +23,27 @@ function apiJS() {
 }
 
 function backgroundsCard(pokemon, cardId) {
-  const card = document.getElementById(`theme__card_${cardId}Front`);
+  // const card = document.getElementById(`theme__card_${cardId}Front`);
+  // card.style.backgroundImage = `url("${pokemon.sprites.other.dream_world.front_default}")`;
+
+  const card = document.getElementById(`theme__card_redFront`);
   card.style.backgroundImage = `url("${pokemon.sprites.other.dream_world.front_default}")`;
+
 }
 
 function imgCardBack(pokemonImg, cardId) {
-  const cardBack = document.getElementById(`theme__card_${cardId}Img`);
+
+  const cardBack = document.getElementById(`theme__card_redImg`);
   cardBack.setAttribute(
-      'src',
-      `${pokemonImg.sprites.other.dream_world.front_default}`,
-  );
-  // cardBack.setAttribute('src', `${pokemonImg.sprites.other.official-artwork.front_default}`);
+    'src',
+    `${pokemonImg.sprites.other.dream_world.front_default}`,
+  )
+
+  // Codigo antiguo, para multiples carId
+  // const cardBack = document.getElementById(`theme__card_${cardId}Img`);
+  // cardBack.setAttribute(
+  //   'src',
+  //   `${pokemonImg.sprites.other.dream_world.front_default}`,
+  // );
+
 }

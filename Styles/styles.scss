@@ -227,6 +227,14 @@ html {
     }
 }
 
+#theme__button_blue {
+    width: auto;
+}
+
+.links:link, .links:visited, .links:active {
+    text-decoration: none;
+}
+
 .theme__button {
     &:hover .theme__buttonstyle {
        transform: translateY(-0.33em);
@@ -235,6 +243,7 @@ html {
        transform: translateY(0);
     }
 }
+
 
 /* Card */
 
@@ -276,6 +285,19 @@ html {
         p {
             font-size: 0.9rem;
             text-align: center;
+        }
+    }
+}
+
+.theme__card {       
+    .theme__cardFront{
+
+        .imgProject {
+            display: flex;
+            & img {
+                max-width: 100%;
+                margin: auto;
+            }
         }
     }
 }

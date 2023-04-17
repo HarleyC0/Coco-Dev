@@ -5,18 +5,33 @@ const buttonGreen = document.getElementById("theme__button_green");
 let buttonColorState = "none";
 
 buttonRed.addEventListener("click", () => {
-  buttonColorState = "Red";
-  validador();
+  if (buttonColorState !== 'Red') {
+    buttonColorState = "Red";
+    validador();
+  } else {
+    buttonColorState = "none";
+    buttonRedReturn();
+  }
 });
 
 buttonBlue.addEventListener("click", () => {
-  buttonColorState = "Blue";
-  validador();
+  if (buttonColorState !== 'Blue') {
+    buttonColorState = "Blue";
+    validador();
+  } else {
+    buttonColorState = "none";
+    buttonBlueReturn();
+  }
 });
 
 buttonGreen.addEventListener("click", () => {
-  buttonColorState = "Green";
-  validador();
+  if (buttonColorState !== 'Green') {
+    buttonColorState = "Green";
+    validador();
+  } else {
+    buttonColorState = "none";
+    buttonGreenReturn();
+  }
 });
 
 function validador() {
@@ -49,6 +64,11 @@ function buttonRedOn() {
   cardGreenB.style.transform = "perspective(800px) rotateY(180deg)";
 }
 
+function buttonRedReturn() {
+  cardRedF.style.transform = "perspective(800px) rotateY(0deg)";
+  cardRedB.style.transform = "perspective(800px) rotateY(180deg)";
+}
+
 function buttonBlueOn() {
   cardRedF.style.transform = "perspective(800px) rotateY(0deg)";
   cardBlueF.style.transform = "perspective(800px) rotateY(180deg)";
@@ -58,6 +78,11 @@ function buttonBlueOn() {
   cardGreenB.style.transform = "perspective(800px) rotateY(180deg)";
 }
 
+function buttonBlueReturn() {
+  cardBlueF.style.transform = "perspective(800px) rotateY(0deg)";
+  cardBlueB.style.transform = "perspective(800px) rotateY(180deg)";
+}
+
 function buttonGreenOn() {
   cardRedF.style.transform = "perspective(800px) rotateY(0deg)";
   cardBlueF.style.transform = "perspective(800px) rotateY(0deg)";
@@ -65,4 +90,9 @@ function buttonGreenOn() {
   cardRedB.style.transform = "perspective(800px) rotateY(180deg)";
   cardBlueB.style.transform = "perspective(800px) rotateY(180deg)";
   cardGreenB.style.transform = "perspective(800px) rotateY(360deg)";
+}
+
+function buttonGreenReturn() {
+  cardGreenF.style.transform = "perspective(800px) rotateY(0deg)";
+  cardGreenB.style.transform = "perspective(800px) rotateY(180deg)";
 }
